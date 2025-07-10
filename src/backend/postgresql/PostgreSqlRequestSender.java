@@ -10,7 +10,7 @@ public class PostgreSqlRequestSender {
     public static boolean addUser(String lastName, String firstName, char gender, char phoneNumber, String email, String pseudo, String password) {
         String url = "jdbc:postgresql://aws-0-us-east-2.pooler.supabase.com:6543/postgres";
         String user = "postgres.gwrtkhydizquwpzppwdj";
-        String passwordSql = "R#3MVDhiCZc7dmSs";
+        String passwordSql = "";
 
         String sql = "INSERT INTO public.\"Utilisateur\" " +
                      "(id_utilisateur, nom_utlisateur, prenom_utilisateur, sex_utilisateurn, numero_telephone_utilisateur, adresse_mail_utilisateur, pseudo, mot_de_passe) " +
